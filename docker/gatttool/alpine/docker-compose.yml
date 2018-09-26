@@ -1,0 +1,10 @@
+version: '3'
+services:
+  gatttool:
+    image: gatttool:alpinev1
+    network_mode: "host"
+    environment:
+      MACADDR: 'aa:aa:aa:aa:aa:aa'
+      INTERFACE: 'hci1'
+      HANDLE: '0x000b'
+      VALUE: '56aaaaaafff0aa'
