@@ -1,0 +1,14 @@
+version: '3'
+services:
+  slave:
+    image: animcogn/gattacker:slavev1
+    network_mode: "host"
+    container_name: "slave"
+    restart: unless-stopped
+  master:
+    image: animcogn/gattacker:masterv1
+    network_mode: "host"
+    container_name: "master"
+    restart: unless-stopped
+    depends_on: 
+      - slave
