@@ -1,4 +1,3 @@
 #!/bin/bash
-RAMDISK=/media/ramdisk
 
-sudo wireshark -i $RAMDISK/fifopipe0 -i $RAMDISK/fifopipe1 -i $RAMDISK/fifopipe2 
+sudo wireshark -k -i /media/ramdisk/fifopipe0 -i /media/ramdisk/fifopipe1 -i /media/ramdisk/fifopipe2
