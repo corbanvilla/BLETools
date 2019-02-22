@@ -1,0 +1,13 @@
+log_level: debug
+bt_device: hci0
+info_scan_rate: 240
+btmon_log: false
+btmon_rawlog: false
+file: false
+rssi_log: false
+aggressive_rssi: false
+ui_filter_mode: :disabled
+ui_inc_filter_mac: []
+ui_inc_filter_prox: []
+signal_spitter: false
+chunker_debug: false
